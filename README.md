@@ -3,6 +3,18 @@
 A full-stack ERP & CRM web application developed to streamline customer management, inventory tracking, sales operations, invoicing, payments, and follow-ups within a single platform.
 
 ---
+## Admin credentials
+siri@cohorise.com - 123456
+
+## Sales credentials
+manu@cohorise.com - 123456
+
+## Warehouse credentials
+vishnu@cohorise.com - 123456
+
+## Accounts credentials
+nidhi@cohorise.com - 123456
+
 
 ## Features
 
