@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #1a1a2e;
+}
+
+
+
+/* ---------- Login Page ---------- */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.login-container h2 {
+  color: #1a1a2e;
+  margin-bottom: 5px;
+}
+
+.login-container p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary:hover {
+  background-color: #16213e;
+}
+
+.error-text {
+  color: #e94560;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ---------- Page Layout ---------- */
+.page-container {
+  padding: 30px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-header h2 {
+  color: #1a1a2e;
+}
+
+/* ---------- Table ---------- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.data-table th {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.data-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.data-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* ---------- Badges ---------- */
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-lead { background-color: #fff3cd; color: #856404; }
+.badge-active { background-color: #d4edda; color: #155724; }
+.badge-inactive { background-color: #f8d7da; color: #721c24; }
+
+/* ---------- Buttons small ---------- */
+.btn-sm {
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.btn-edit { background-color: #4a90d9; color: white; }
+.btn-delete { background-color: #e94560; color: white; }
+
+/* ---------- Modal ---------- */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 450px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.modal-box h3 {
+  margin-bottom: 20px;
+  color: #1a1a2e;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-secondary {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  font-size: 14px;
+}
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+.dashboard-header{
+  margin-bottom:30px;
+}
+
+.dashboard-header h1{
+  color:#1a1a2e;
+  font-size:32px;
+}
+
+.dashboard-header p{
+  color:#666;
+  margin-top:8px;
+}
+
+.dashboard-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:25px;
+}
+
+.dashboard-card{
+  background:#fff;
+  border-radius:12px;
+  padding:25px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.dashboard-card:hover{
+  transform:translateY(-5px);
+}
+
+.dashboard-card h3{
+  color:#555;
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+.dashboard-card h1{
+  font-size:40px;
+  color:#1a1a2e;
+}
+
+.business-health{
+  margin-top:35px;
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.progress-bar{
+  margin-top:15px;
+  width:100%;
+  height:18px;
+  background:#ddd;
+  border-radius:50px;
+  overflow:hidden;
+}
+
+.progress-fill{
+  height:100%;
+  background:#28a745;
+  transition:.4s;
+}
+
+.recent-activity{
+  margin-top:35px;
+  background:white;
+  border-radius:12px;
+  padding:25px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.activity-item{
+  padding:12px 0;
+  border-bottom:1px solid #eee;
+}
+
+.activity-item:last-child{
+  border-bottom:none;
+}
+
+
+
+/* Dashboard */
+
+.dashboard-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:30px;
+
+}
+
+
+.dashboard-card{
+
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.12);
+
+}
+
+
+.dashboard-card h4{
+
+    margin-bottom:10px;
+    color:#555;
+
+}
+
+
+.dashboard-card h2{
+
+    font-size:28px;
+
+}
+
+
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar{
+    background:#1f2937;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.hamburger{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    margin-right:15px;
+}
+
+.navbar-brand{
+    font-size:18px;
+    font-weight:700;
+    color:white;
+    margin-right:auto;
+}
+
+.navbar-links{
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.navbar-links a{
+    color:white;
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.navbar-links a:hover{
+    background:#374151;
+}
+
+.navbar-user{
+    margin-left:20px;
+    color:#ddd;
+    font-weight:600;
+}
+
+.logout-btn{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.logout-btn:hover{
+    background:#b02a37;
+}
+
+/* ==============================
+   MOBILE SIDEBAR
+============================== */
+
+/* .sidebar-header{
+    display:flex;
+    justify-content:flex-end;
+    width:100%;
+    margin-bottom:20px;
+    padding-bottom:15px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+} */
+
+.sidebar-header{
+    display:none;
+}
+
+.close-btn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.close-btn:hover{
+    color:#38bdf8;
+    transform:rotate(90deg);
+}
+
+@media(max-width:830px){
+
+.hamburger{
+    display:block;
+    background:none;
+    border:none;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
+    margin-right:15px;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 20px;
+}
+
+.navbar-links{
+
+    position:fixed;
+
+    top:0;
+
+    left:-100%;
+
+    width:280px;
+
+    height:100vh;
+
+    background:#111827;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    padding:20px;
+
+    transition:0.35s;
+
+    z-index:9999;
+
+}
+
+.navbar-links.show{
+
+    left:0;
+
+}
+
+.navbar-links a{
+
+    width:100%;
+
+    padding:14px 15px;
+
+    border-radius:8px;
+
+    margin-bottom:8px;
+
+}
+
+.navbar-links a:hover{
+
+    background:#1f2937;
+
+}
+
+.navbar-user{
+
+    margin-top:auto;
+
+    width:100%;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+}
+
+.logout-btn{
+
+    width:100%;
+
+    margin-top:12px;
+
+}
+
+.sidebar-header{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    width:100%;
+    margin-bottom:20px;
+}
+
+}
+
+.dashboard-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+margin-top:30px;
+
+}
+
+
+@media(max-width:1000px){
+
+.dashboard-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:700px){
+
+.dashboard-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    z-index:9998;
+}
